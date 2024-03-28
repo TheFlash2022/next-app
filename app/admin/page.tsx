@@ -1,4 +1,8 @@
+
+
 import React from "react";
+import Link from "next/link";
+
 
 interface User {
   id: number;
@@ -7,11 +11,14 @@ interface User {
 }
 
 const admin = async () => {
+  
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const users: User[] = await res.json();
 
   return (
     <div>
+      <Link href={"/"}>Back to HomePage</Link>
+      
       <h1>Users</h1>
       <table className="table table-bordered">
         <thead>
