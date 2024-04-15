@@ -16,7 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="coffee">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className="bg-teal-300">
+          <h3>this is container header</h3>
+        </header>
+        {children}
+        <footer className="bg-amber-300">
+          <h3>this is container footer</h3>
+        </footer>
+      </body>
     </html>
   );
 }
