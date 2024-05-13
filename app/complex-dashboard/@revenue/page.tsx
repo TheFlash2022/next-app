@@ -3,7 +3,7 @@ import React from 'react'
 
 const Revenue = () => {
   return (
-    <Card>Revenue</Card>
+    <Card>Revenue akaka</Card>
   )
 }
 

@@ -4,7 +4,7 @@ import React from 'react'
 const Users = () => {
   return (
     <Card>
-      List users
+      List users hihi
     </Card>
   )
 }
